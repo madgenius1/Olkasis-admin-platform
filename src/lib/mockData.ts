@@ -6,7 +6,7 @@ import type {
   MarginCall, ConcentrationRisk, FeatureFlag, GlobalLimit, SystemMetric,
   SystemAlert, DerivativesPosition, DerivativesCertification, STRReport,
   AdminUser, WaitlistEntry, LiveChatSession,
-} from "@/types";
+} from "../types";
 
 // ── Chart Data ────────────────────────────────────────────────────
 
@@ -60,7 +60,7 @@ export const MOCK_NSE_STOCKS: Stock[] = [
   { ticker: "BAT", name: "British American Tobacco", sector: "Consumer Goods", lastPrice: 460.00, change: 5.00, changePct: 1.10, volume: 85000, marketCap: 18400000000, pe: 12.1, yearHigh: 495.00, yearLow: 400.00, assetClass: "equity", tradingStatus: "active" },
   { ticker: "NCBA", name: "NCBA Group PLC", sector: "Banking", lastPrice: 34.70, change: -0.30, changePct: -0.86, volume: 1540000, marketCap: 56500000000, pe: 9.2, yearHigh: 40.00, yearLow: 28.00, assetClass: "equity", tradingStatus: "active" },
   { ticker: "ABSA", name: "Absa Bank Kenya", sector: "Banking", lastPrice: 15.10, change: 0.10, changePct: 0.67, volume: 2300000, marketCap: 82160000000, pe: 7.9, yearHigh: 17.50, yearLow: 12.00, assetClass: "equity", tradingStatus: "active" },
-  { ticker: "STAG", name: "Standard Group", sector: "Media", lastPrice: 18.00, change: -0.50, changePct: -2.70, volume: 120000, marketCap: 3240000000, pe: null, yearHigh: 24.00, yearLow: 14.00, assetClass: "equity", tradingStatus: "halted" },
+  { ticker: "STAG", name: "Standard Group", sector: "Media", lastPrice: 18.00, change: -0.50, changePct: -2.70, volume: 120000, marketCap: 3240000000, pe: 7.6, yearHigh: 24.00, yearLow: 14.00, assetClass: "equity", tradingStatus: "halted" },
   { ticker: "WPP", name: "WPP Scangroup", sector: "Marketing", lastPrice: 8.25, change: 0.05, changePct: 0.61, volume: 88000, marketCap: 2310000000, pe: 18.4, yearHigh: 10.50, yearLow: 6.50, assetClass: "equity", tradingStatus: "active" },
 ];
 
@@ -73,7 +73,7 @@ export const MOCK_NSE_ETFS: Stock[] = [
 
 export const MOCK_USERS: User[] = [
   {
-    id: "USR001", olkasisId: "ZAN-001-2024", name: "James Mwangi", email: "j.mwangi@email.com",
+    id: "USR001", OlkasisId: "ZAN-001-2024", name: "James Mwangi", email: "j.mwangi@email.com",
     phone: "+254712345678", dob: "1990-03-15", gender: "male", nationality: "Kenyan",
     address: { street: "14 Westlands Ave", city: "Nairobi", county: "Nairobi", country: "Kenya", postalCode: "00100" },
     accountType: "individual", accountStatus: "active", kycStatus: "verified",
@@ -88,7 +88,7 @@ export const MOCK_USERS: User[] = [
     ],
   },
   {
-    id: "USR002", olkasisId: "ZAN-002-2024", name: "Faith Njeri", email: "faith.njeri@email.com",
+    id: "USR002", OlkasisId: "ZAN-002-2024", name: "Faith Njeri", email: "faith.njeri@email.com",
     phone: "+254723456789", dob: "1995-07-22", gender: "female", nationality: "Kenyan",
     address: { street: "7 Karen Road", city: "Nairobi", county: "Nairobi", country: "Kenya", postalCode: "00502" },
     accountType: "individual", accountStatus: "active", kycStatus: "verified",
@@ -100,7 +100,7 @@ export const MOCK_USERS: User[] = [
     loginHistory: [],
   },
   {
-    id: "USR003", olkasisId: "ZAN-003-2024", name: "Peter Kamau", email: "p.kamau@email.com",
+    id: "USR003", OlkasisId: "ZAN-003-2024", name: "Peter Kamau", email: "p.kamau@email.com",
     phone: "+254734567890", dob: "1985-11-08", gender: "male", nationality: "Kenyan",
     address: { street: "22 Kilimani Lane", city: "Nairobi", county: "Nairobi", country: "Kenya", postalCode: "00200" },
     accountType: "joint", accountStatus: "active", kycStatus: "verified",
@@ -112,7 +112,7 @@ export const MOCK_USERS: User[] = [
     loginHistory: [],
   },
   {
-    id: "USR004", olkasisId: "ZAN-004-2024", name: "Amina Hassan", email: "a.hassan@email.com",
+    id: "USR004", OlkasisId: "ZAN-004-2024", name: "Amina Hassan", email: "a.hassan@email.com",
     phone: "+254745678901", dob: "2002-04-14", gender: "female", nationality: "Kenyan",
     address: { street: "5 Parklands Rd", city: "Nairobi", county: "Nairobi", country: "Kenya", postalCode: "00620" },
     accountType: "individual", accountStatus: "pending", kycStatus: "pending",
@@ -123,7 +123,7 @@ export const MOCK_USERS: User[] = [
     deviceOS: "Android", location: "Nairobi", isDerivativesEnabled: false, loginHistory: [],
   },
   {
-    id: "USR005", olkasisId: "ZAN-005-2023", name: "David Ochieng", email: "d.ochieng@email.com",
+    id: "USR005", OlkasisId: "ZAN-005-2023", name: "David Ochieng", email: "d.ochieng@email.com",
     phone: "+254756789012", dob: "1978-09-25", gender: "male", nationality: "Kenyan",
     address: { street: "18 Hurlingham", city: "Nairobi", county: "Nairobi", country: "Kenya", postalCode: "00100" },
     accountType: "individual", accountStatus: "suspended", kycStatus: "verified",
@@ -135,7 +135,7 @@ export const MOCK_USERS: User[] = [
     loginHistory: [],
   },
   {
-    id: "USR006", olkasisId: "ZAN-006-2025", name: "Grace Wanjiku", email: "g.wanjiku@email.com",
+    id: "USR006", OlkasisId: "ZAN-006-2025", name: "Grace Wanjiku", email: "g.wanjiku@email.com",
     phone: "+254767890123", dob: "1993-12-03", gender: "female", nationality: "Kenyan",
     address: { street: "9 Kileleshwa", city: "Nairobi", county: "Nairobi", country: "Kenya", postalCode: "00200" },
     accountType: "individual", accountStatus: "active", kycStatus: "verified",
@@ -235,11 +235,11 @@ export const MOCK_WALLET_TRANSACTIONS: WalletTransaction[] = [
 // ── P2P ───────────────────────────────────────────────────────────
 
 export const MOCK_P2P_TRANSFERS: P2PTransfer[] = [
-  { id: "P2P001", ref: "P2P-2026-001", senderId: "USR001", senderName: "James Mwangi", receiverId: "USR006", receiverName: "Grace Wanjiku", amount: 20000, fee: 20, type: "p2p", method: "olkasis_id", status: "completed", note: "Lunch", timestamp: "2026-04-15T12:00:00Z", hasDispute: false },
+  { id: "P2P001", ref: "P2P-2026-001", senderId: "USR001", senderName: "James Mwangi", receiverId: "USR006", receiverName: "Grace Wanjiku", amount: 20000, fee: 20, type: "p2p", method: "Olkasis_id", status: "completed", note: "Lunch", timestamp: "2026-04-15T12:00:00Z", hasDispute: false },
   { id: "P2P002", ref: "P2P-2026-002", senderId: "USR003", senderName: "Peter Kamau", receiverId: "USR002", receiverName: "Faith Njeri", amount: 150000, fee: 150, type: "business", method: "phone", status: "completed", timestamp: "2026-04-15T09:30:00Z", hasDispute: false },
   { id: "P2P003", ref: "P2P-2026-003", senderId: "USR002", senderName: "Faith Njeri", receiverId: "USR007", receiverName: "Samuel Kipchoge", amount: 5000, fee: 5, type: "gift", method: "qr", status: "disputed", timestamp: "2026-04-14T16:00:00Z", hasDispute: true, disputeId: "DSP001" },
-  { id: "P2P004", ref: "P2P-2026-004", senderId: "USR006", senderName: "Grace Wanjiku", receiverId: "USR001", receiverName: "James Mwangi", amount: 8000, fee: 8, type: "p2p", method: "olkasis_id", status: "pending", timestamp: "2026-04-16T08:30:00Z", hasDispute: false },
-  { id: "P2P005", ref: "P2P-2026-005", senderId: "USR005", senderName: "David Ochieng", receiverId: "USR013", receiverName: "Alex Maina", amount: 2500000, fee: 2500, type: "business", method: "olkasis_id", status: "completed", timestamp: "2026-04-13T11:00:00Z", hasDispute: false },
+  { id: "P2P004", ref: "P2P-2026-004", senderId: "USR006", senderName: "Grace Wanjiku", receiverId: "USR001", receiverName: "James Mwangi", amount: 8000, fee: 8, type: "p2p", method: "Olkasis_id", status: "pending", timestamp: "2026-04-16T08:30:00Z", hasDispute: false },
+  { id: "P2P005", ref: "P2P-2026-005", senderId: "USR005", senderName: "David Ochieng", receiverId: "USR013", receiverName: "Alex Maina", amount: 2500000, fee: 2500, type: "business", method: "Olkasis_id", status: "completed", timestamp: "2026-04-13T11:00:00Z", hasDispute: false },
 ];
 
 export const MOCK_P2P_DISPUTES: P2PDispute[] = [
@@ -363,7 +363,7 @@ export const MOCK_COHORT_DATA: CohortData[] = [
   { cohort: "Mar 2025", users: 4120, month1: 65, month2: 52, month3: 46, month6: 36 },
   { cohort: "Apr 2025", users: 3680, month1: 69, month2: 55, month3: 49, month6: 39 },
   { cohort: "May 2025", users: 4840, month1: 72, month2: 58, month3: 52, month6: 41 },
-  { cohort: "Jun 2025", users: 3920, month1: 70, month2: 56, month3: 50 },
+  { cohort: "Jun 2025", users: 3920, month1: 70, month2: 56, month3: 50, month6: 32 },
 ];
 
 // ── System ────────────────────────────────────────────────────────

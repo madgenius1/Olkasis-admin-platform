@@ -8,7 +8,7 @@ import {
   type ReactNode,
 } from "react";
 import { useRouter } from "next/navigation";
-import type { AdminUser, AdminRole } from "@/types";
+import type { AdminUser, AdminRole } from "../types";
 
 interface AuthContextValue {
   isAuthenticated: boolean;

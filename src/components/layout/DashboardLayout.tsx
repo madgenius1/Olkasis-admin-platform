@@ -3,8 +3,8 @@
 import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useAuth } from "@/contexts/AuthContext";
-import { useTheme } from "@/contexts/ThemeContext";
+import { useAuth } from "@/src/contexts/AuthContext";
+import { useTheme } from "@/src/contexts/ThemeContext";
 import {
   LayoutDashboard, Users, ShieldCheck, TrendingUp, Wallet, ArrowLeftRight,
   HeadphonesIcon, BookOpen, Bot, BarChart3, Megaphone, ShieldAlert,
@@ -14,8 +14,8 @@ import {
   GraduationCap, Newspaper, Activity, ClipboardList, Users2, ListChecks,
   Siren, BookMarked, LineChart, PieChart, Boxes, ToggleLeft,
 } from "lucide-react";
-import { initials } from "@/lib/utils";
-import { ROLE_LABELS } from "@/types";
+import { initials } from "@/src/lib/utils";
+import { ROLE_LABELS } from "@/src/types";
 
 interface NavItem {
   label: string;

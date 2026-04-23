@@ -11,19 +11,7 @@ interface RoleGuardProps {
   children: ReactNode;
 }
 
-/**
- * RoleGuard — wraps any page that requires a specific permission.
- *
- * Usage (inside a page component):
- *   <RoleGuard><PageContent /></RoleGuard>
- *
- * It reads the current pathname and the authenticated user's role,
- * then either renders children or shows an access-denied screen.
- *
- * Note: coarse-grained route protection is already handled by
- * middleware.ts (unauthenticated redirect). RoleGuard provides the
- * fine-grained RBAC layer on top of that.
- */
+
 export default function RoleGuard({ children }: RoleGuardProps) {
   const { isAuthenticated, role } = useAuth();
   const pathname = usePathname();
