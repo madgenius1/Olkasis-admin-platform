@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { User, Bell, Shield, Palette, Key, LogOut, Save, CheckCircle, Eye, EyeOff, Moon, Sun } from "lucide-react";
-import { useAuth } from "@/contexts/AuthContext";
-import { useTheme } from "@/contexts/ThemeContext";
-import { ROLE_LABELS } from "@/types";
-import { initials } from "@/lib/utils";
+import { useAuth } from "@/src/contexts/AuthContext";
+import { useTheme } from "@/src/contexts/ThemeContext";
+import { ROLE_LABELS } from "@/src/types";
+import { initials } from "@/src/lib/utils";
 
 type Tab = "profile" | "security" | "notifications" | "appearance";
 

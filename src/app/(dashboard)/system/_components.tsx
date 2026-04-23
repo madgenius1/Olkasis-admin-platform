@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import { ToggleLeft, ToggleRight, Activity, AlertTriangle, Settings, Clock, Banknote, TrendingUp, RefreshCw } from "lucide-react";
-import { MOCK_FEATURE_FLAGS, MOCK_GLOBAL_LIMITS, MOCK_SYSTEM_METRICS, MOCK_SYSTEM_ALERTS } from "@/lib/mockData";
-import { formatKES } from "@/lib/utils";
-import type { FeatureFlag, GlobalLimit } from "@/types";
+import { MOCK_FEATURE_FLAGS, MOCK_GLOBAL_LIMITS, MOCK_SYSTEM_METRICS, MOCK_SYSTEM_ALERTS } from "@/src/lib/mockData";
+import { formatKES } from "@/src/lib/utils";
+import type { FeatureFlag, GlobalLimit } from "@/src/types";
 
 // ─── System Configuration ─────────────────────────────────────────
 export function SystemConfig() {

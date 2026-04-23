@@ -1,2 +1,4 @@
 import { ReportsOverview } from "./_components";
-export default function Page() { return <ReportsOverview />; }
+export default function Page() {
+    return <ReportsOverview />;
+}

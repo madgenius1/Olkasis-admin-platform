@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Cell } from "recharts";
 import { ShieldAlert, AlertTriangle, TrendingDown, Zap, CheckCircle } from "lucide-react";
-import { MOCK_RISK_INCIDENTS, MOCK_MARGIN_CALLS, MOCK_CONCENTRATION_RISK } from "@/lib/mockData";
-import { formatKES, formatNumber, relativeTime } from "@/lib/utils";
-import type { RiskLevel } from "@/types";
+import { MOCK_RISK_INCIDENTS, MOCK_MARGIN_CALLS, MOCK_CONCENTRATION_RISK } from "@/src/lib/mockData";
+import { formatKES, formatNumber, relativeTime } from "@/src/lib/utils";
+import type { RiskLevel } from "@/src/types";
 
 const RISK_COLOR: Record<RiskLevel, string> = { low: "#059669", medium: "#D97706", high: "#DC2626", critical: "#7F1D1D" };
 type Tab = "overview" | "concentration" | "margin" | "operational";

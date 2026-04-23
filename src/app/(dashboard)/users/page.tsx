@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Search, Filter, Users, UserCheck, UserX, Clock, Download } from "lucide-react";
-import { MOCK_USERS } from "@/lib/mockData";
-import { formatKES, formatNumber, relativeTime, initials } from "@/lib/utils";
-import { KYC_BADGE, STATUS_BADGE } from "@/types";
-import type { AccountStatus, KYCStatus } from "@/types";
+import { MOCK_USERS } from "@/src/lib/mockData";
+import { formatKES, formatNumber, relativeTime, initials } from "@/src/lib/utils";
+import { KYC_BADGE, STATUS_BADGE } from "@/src/types";
+import type { AccountStatus, KYCStatus } from "@/src/types";
 
 type StatusFilter = "all" | AccountStatus;
 type KYCFilter = "all" | KYCStatus;
@@ -21,7 +21,7 @@ export default function UsersPage() {
       !search ||
       u.name.toLowerCase().includes(search.toLowerCase()) ||
       u.email.toLowerCase().includes(search.toLowerCase()) ||
-      u.zanariId.toLowerCase().includes(search.toLowerCase()) ||
+      u.OlkasisId.toLowerCase().includes(search.toLowerCase()) ||
       u.phone.includes(search);
     const matchStatus = statusFilter === "all" || u.accountStatus === statusFilter;
     const matchKYC = kycFilter === "all" || u.kycStatus === kycFilter;
@@ -132,7 +132,7 @@ export default function UsersPage() {
                       </div>
                     </div>
                   </td>
-                  <td className="font-mono text-xs text-blue-700 font-semibold">{u.zanariId}</td>
+                  <td className="font-mono text-xs text-blue-700 font-semibold">{u.OlkasisId}</td>
                   <td>
                     <span className="badge-neutral badge capitalize">{u.accountType}</span>
                   </td>

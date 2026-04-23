@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { Wallet, Banknote, Download, ArrowUpRight, ArrowDownRight, Search, RefreshCw } from "lucide-react";
-import { MOCK_WALLET_TRANSACTIONS } from "@/lib/mockData";
-import { formatKES, relativeTime } from "@/lib/utils";
-import { TX_STATUS_BADGE } from "@/types";
-import type { TransactionStatus, TransactionType } from "@/types";
+import { MOCK_WALLET_TRANSACTIONS } from "@/src/lib/mockData";
+import { formatKES, relativeTime } from "@/src/lib/utils";
+import { TX_STATUS_BADGE } from "@/src/types";
+import type { TransactionStatus, TransactionType } from "@/src/types";
 
 // ─── Wallet Overview ──────────────────────────────────────────────
 export function WalletsOverview() {

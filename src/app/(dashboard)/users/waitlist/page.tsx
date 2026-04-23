@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { ListChecks, Send, Clock, CheckCircle, UserPlus } from "lucide-react";
-import { MOCK_WAITLIST } from "@/lib/mockData";
-import { relativeTime } from "@/lib/utils";
+import { MOCK_WAITLIST } from "@/src/lib/mockData";
+import { relativeTime } from "@/src/lib/utils";
 
 export default function WaitlistPage() {
   const [entries, setEntries] = useState(MOCK_WAITLIST);

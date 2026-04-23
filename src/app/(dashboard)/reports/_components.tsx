@@ -5,8 +5,8 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from "recharts";
 import { BarChart3, Download, FileText, TrendingUp, PieChart as PieIcon, BookMarked } from "lucide-react";
-import { MOCK_REVENUE_DATA, MOCK_AUM_DATA, MOCK_VOLUME_DATA, MOCK_USER_GROWTH } from "@/lib/mockData";
-import { formatKES, formatNumber } from "@/lib/utils";
+import { MOCK_REVENUE_DATA, MOCK_AUM_DATA, MOCK_VOLUME_DATA, MOCK_USER_GROWTH } from "@/src/lib/mockData";
+import { formatKES, formatNumber } from "@/src/lib/utils";
 import Link from "next/link";
 
 const PIE_COLORS = ["#1E40AF", "#059669", "#D97706", "#7C3AED"];

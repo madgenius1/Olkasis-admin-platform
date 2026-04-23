@@ -13,9 +13,9 @@ import {
 import {
   MOCK_ORDERS, MOCK_NSE_STOCKS, MOCK_NSE_ETFS, MOCK_VOLUME_DATA,
   MOCK_DERIVATIVES_POSITIONS, MOCK_DERIVATIVES_CERTS,
-} from "@/lib/mockData";
-import { formatKES, formatNumber, relativeTime } from "@/lib/utils";
-import type { OrderStatus } from "@/types";
+} from "@/src/lib/mockData";
+import { formatKES, formatNumber, relativeTime } from "@/src/lib/utils";
+import type { OrderStatus } from "@/src/types";
 
 // ─── Trading Overview ─────────────────────────────────────────────
 export function TradingOverview() {

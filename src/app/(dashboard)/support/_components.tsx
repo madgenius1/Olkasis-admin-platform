@@ -5,10 +5,10 @@ import {
   HeadphonesIcon, MessageSquare, Clock, CheckCircle, AlertTriangle,
   Send, Search, ChevronDown, User, Inbox,
 } from "lucide-react";
-import { MOCK_TICKETS, MOCK_LIVE_CHATS } from "@/lib/mockData";
-import { relativeTime } from "@/lib/utils";
-import { PRIORITY_BADGE } from "@/types";
-import type { TicketStatus, TicketPriority } from "@/types";
+import { MOCK_TICKETS, MOCK_LIVE_CHATS } from "@/src/lib/mockData";
+import { relativeTime } from "@/src/lib/utils";
+import { PRIORITY_BADGE } from "@/src/types";
+import type { TicketStatus, TicketPriority } from "@/src/types";
 import Link from "next/link";
 
 // ─── Support Overview ─────────────────────────────────────────────

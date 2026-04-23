@@ -7,9 +7,9 @@ import {
   MessageSquare, Phone, Mail, MapPin, Ban, RefreshCw,
   LogOut, Bell, Edit, Flag,
 } from "lucide-react";
-import { MOCK_USERS } from "@/lib/mockData";
-import { formatKES, formatNumber, relativeTime, initials } from "@/lib/utils";
-import { KYC_BADGE, STATUS_BADGE } from "@/types";
+import { MOCK_USERS } from "@/src/lib/mockData";
+import { formatKES, formatNumber, relativeTime, initials } from "@/src/lib/utils";
+import { KYC_BADGE, STATUS_BADGE } from "@/src/types";
 
 export default function UserDetailPage() {
   const params = useParams<{ id: string }>();
@@ -51,7 +51,7 @@ export default function UserDetailPage() {
               <span className="badge-neutral badge capitalize">{user.accountType}</span>
             </div>
             <p className="text-sm text-slate-500">{user.email} · {user.phone}</p>
-            <p className="text-xs text-slate-400 mt-0.5 font-mono">{user.zanariId} · Joined {new Date(user.registeredAt).toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })}</p>
+            <p className="text-xs text-slate-400 mt-0.5 font-mono">{user.OlkasisId} · Joined {new Date(user.registeredAt).toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })}</p>
           </div>
           <div className="flex flex-wrap gap-2">
             {[
