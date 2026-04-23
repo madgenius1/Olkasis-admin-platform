@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { Bot, Flag, CheckCircle, AlertTriangle, MessageSquare, Settings, BarChart3, TrendingUp } from "lucide-react";
-import { MOCK_RAFIKI_CONVERSATIONS } from "@/lib/mockData";
-import { relativeTime } from "@/lib/utils";
-import type { RafikiConversation } from "@/types";
+import { MOCK_RAFIKI_CONVERSATIONS } from "@/src/lib/mockData";
+import { relativeTime } from "@/src/lib/utils";
+import type { RafikiConversation } from "@/src/types";
 
 type RafikiTab = "conversations" | "flagged" | "metrics" | "config";
 

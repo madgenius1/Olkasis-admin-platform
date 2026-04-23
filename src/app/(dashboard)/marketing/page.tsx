@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import { Megaphone, Trophy, TrendingUp, RefreshCw, Plus, Users, DollarSign, Percent, Zap, ArrowUpRight } from "lucide-react";
-import { MOCK_CAMPAIGNS, MOCK_REFERRALS, MOCK_COHORT_DATA, MOCK_USER_GROWTH } from "@/lib/mockData";
-import { formatKES, formatNumber } from "@/lib/utils";
+import { MOCK_CAMPAIGNS, MOCK_REFERRALS, MOCK_COHORT_DATA, MOCK_USER_GROWTH } from "@/src/lib/mockData";
+import { formatKES, formatNumber } from "@/src/lib/utils";
 
 type Tab = "campaigns" | "referrals" | "cohort" | "churn";
 

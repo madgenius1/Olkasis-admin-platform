@@ -1,4 +1,4 @@
-import type { AdminRole } from "@/types";
+import type { AdminRole } from "../types";
 
 export const ROLE_PERMISSIONS: Record<AdminRole, string[]> = {
   super_admin: ["*"],

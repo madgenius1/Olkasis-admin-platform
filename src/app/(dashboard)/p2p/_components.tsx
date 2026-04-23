@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { ArrowLeftRight, AlertCircle, Download, Search } from "lucide-react";
-import { MOCK_P2P_TRANSFERS, MOCK_P2P_DISPUTES } from "@/lib/mockData";
-import { formatKES, relativeTime } from "@/lib/utils";
-import type { P2PStatus } from "@/types";
+import { MOCK_P2P_TRANSFERS, MOCK_P2P_DISPUTES } from "@/src/lib/mockData";
+import { formatKES, relativeTime } from "@/src/lib/utils";
+import type { P2PStatus } from "@/src/types";
 
 // ─── P2P Transfers ────────────────────────────────────────────────
 export function P2PTransfers() {

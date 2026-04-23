@@ -1,2 +1,4 @@
 import { AMLAlerts } from "../_components";
-export default function AMLAlertsPage() { return <AMLAlerts />; }
+export default function AMLAlertsPage() {
+    return <AMLAlerts />;
+}

@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { Users, Plus, Shield, CheckCircle, XCircle, Key, Globe, Trash2, Edit } from "lucide-react";
-import { MOCK_ADMIN_USERS } from "@/lib/mockData";
-import { ROLE_LABELS } from "@/types";
-import type { AdminUser, AdminRole } from "@/types";
-import { relativeTime, initials } from "@/lib/utils";
+import { MOCK_ADMIN_USERS } from "@/src/lib/mockData";
+import { ROLE_LABELS } from "@/src/types";
+import type { AdminUser, AdminRole } from "@/src/types";
+import { relativeTime, initials } from "@/src/lib/utils";
 
 const ROLE_COLOR: Record<AdminRole, string> = {
   super_admin: "bg-purple-100 text-purple-800 border-purple-200",

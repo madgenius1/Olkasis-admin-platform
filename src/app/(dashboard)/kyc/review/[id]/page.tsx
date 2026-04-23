@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle, XCircle, RefreshCw, Eye, AlertTriangle, User } from "lucide-react";
-import { MOCK_KYC_QUEUE } from "@/lib/mockData";
-import { relativeTime } from "@/lib/utils";
+import { MOCK_KYC_QUEUE } from "@/src/lib/mockData";
+import { relativeTime } from "@/src/lib/utils";
 
 const REJECTION_REASONS = [
   "Document expired",

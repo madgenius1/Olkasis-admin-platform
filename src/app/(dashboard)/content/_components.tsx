@@ -5,9 +5,9 @@ import {
   Newspaper, GraduationCap, Plus, Bell, Eye, Edit,
   Trash2, BookOpen, Star, Award,
 } from "lucide-react";
-import { MOCK_NEWS, MOCK_LESSONS, MOCK_BADGES } from "@/lib/mockData";
-import { relativeTime } from "@/lib/utils";
-import type { LessonStatus } from "@/types";
+import { MOCK_NEWS, MOCK_LESSONS, MOCK_BADGES } from "@/src/lib/mockData";
+import { relativeTime } from "@/src/lib/utils";
+import type { LessonStatus } from "@/src/types";
 
 // ─── News & Content ───────────────────────────────────────────────
 export function ContentNews() {

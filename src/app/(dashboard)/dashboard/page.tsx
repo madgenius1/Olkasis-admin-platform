@@ -11,8 +11,8 @@ import {
 import {
   MOCK_REVENUE_DATA, MOCK_AUM_DATA, MOCK_USER_GROWTH,
   MOCK_VOLUME_DATA, MOCK_AML_ALERTS, MOCK_ORDERS, MOCK_WALLET_TRANSACTIONS,
-} from "@/lib/mockData";
-import { formatKES, formatNumber, relativeTime } from "@/lib/utils";
+} from "@/src/lib/mockData";
+import { formatKES, formatNumber, relativeTime } from "@/src/lib/utils";
 
 const KPI_CARDS = [
   { label: "Total Users", value: "48,291", delta: "+240 today", up: true, icon: Users, color: "bg-blue-50 text-blue-700" },

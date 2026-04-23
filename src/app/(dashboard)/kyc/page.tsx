@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Clock, CheckCircle, XCircle, AlertTriangle, FileCheck } from "lucide-react";
-import { MOCK_KYC_QUEUE } from "@/lib/mockData";
-import { relativeTime } from "@/lib/utils";
-import type { KYCPriority } from "@/types";
+import { MOCK_KYC_QUEUE } from "@/src/lib/mockData";
+import { relativeTime } from "@/src/lib/utils";
+import type { KYCPriority } from "@/src/types";
 
 const PRIORITY_COLOR: Record<KYCPriority, string> = {
   urgent: "badge-danger",

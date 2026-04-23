@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuth } from "@/src/contexts/AuthContext";
 import { Eye, EyeOff, Mail, ShieldCheck, AlertCircle, Loader2 } from "lucide-react";
 
 export default function LoginPage() {

@@ -7,9 +7,9 @@ import {
   ShieldCheck, Siren, FileLock, FileWarning, AlertTriangle,
   CheckCircle, Eye, Download, Filter, Search,
 } from "lucide-react";
-import { MOCK_AML_ALERTS, MOCK_AUDIT_LOGS, MOCK_STR_REPORTS } from "@/lib/mockData";
-import { formatKES, relativeTime } from "@/lib/utils";
-import { ROLE_LABELS } from "@/types";
+import { MOCK_AML_ALERTS, MOCK_AUDIT_LOGS, MOCK_STR_REPORTS } from "@/src/lib/mockData";
+import { formatKES, relativeTime } from "@/src/lib/utils";
+import { ROLE_LABELS } from "@/src/types";
 
 // ─── Compliance Overview ──────────────────────────────────────────
 export function ComplianceOverview() {

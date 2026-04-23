@@ -1,2 +1,4 @@
 import { ContentNews } from "./_components";
-export default function Page() { return <ContentNews />; }
+export default function Page() {
+    return <ContentNews />;
+}
